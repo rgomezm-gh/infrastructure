@@ -1,0 +1,10 @@
+echo "build=>"
+read
+docker build . -t rgomezm/fliimg:latest
+# docker build . --build-arg http_proxy=<proxy>:8080 -t rgomezm/fliimg:latest
+# docker --config ./config build -t rgomezm/fliimg .
+echo "************************************************************"
+echo "Status:"
+docker ps
+docker images
+echo "************************************************************"

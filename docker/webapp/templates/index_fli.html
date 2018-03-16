@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body>
+    <title>Welcome to freelancedIn!</title>
+
+  <script type="text/javascript">
+    function AdjustIframeHeightOnLoad() {
+      document.getElementById("iframe1").style.height = document.getElementById("iframe1").contentWindow.document.body.scrollHeight + "px";
+      document.getElementById("iframe2").style.height = document.getElementById("iframe2").contentWindow.document.body.scrollHeight + "px";
+    }
+    function AdjustIframeHeight(i) {
+      document.getElementById("iframe1").style.height = parseInt(i) + "px";
+      document.getElementById("iframe2").style.height = parseInt(i) + "px";
+    }
+  </script>
+
+  <div >
+    <iframe id="iframe1" src="/fli_main.html" align="left" style="margin:0; width:10%; height:150px; border:2px; overflow:hidden;" scrolling="no" onload="AdjustIframeHeightOnLoad()"></iframe>
+    <iframe id="iframe2" src="/fli_login.html" align="right" frameborder="1"  style="margin:0; width:88%; height:150px; border:2px solid grey; overflow:hidden;" scrolling="no" onload="AdjustIframeHeightOnLoad()"></iframe>
+  </div>
+
+  </body>
+</html>

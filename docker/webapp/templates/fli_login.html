@@ -1,0 +1,75 @@
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link href="/static/homepage_style.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+
+  <script type="text/javascript" src="/static/fli_main.js" >
+  </script>
+
+  <div id="header_wrapper">
+    <h1> freelancedIn ... Unleash your skills</h1> 
+  </div>
+
+  <div id="wrapper">
+
+    <div id="div1">
+      <form name="loginForm" method="post" onsubmit="return valida_login()">
+        <p>Your email<br>
+        <input type="text" name="email" size="33"  placeholder="youraccount@fli.com">
+        <p>Your password<br>
+        <input type="password" name="password"  placeholder="Password">
+        <input type="submit" name="login" value="Sign In" style="font-size:14px;width:6em;height:1.8em;">
+        <br><a href="" style="font-family:arial;font-size:9px;color:#ED940E;">Forgotten password?</a>
+        <a href=""  style="font-family:arial;font-size:9px;color:#ED940E;">Forgotten account?</a>
+      </form>
+      <p>
+      <form name="loginFormOther" method="post">
+        <br><p><input type="image" src="/static/si-facebook.PNG" alt="Submit" />
+        <br><p><input type="image" src="/static/si-google.PNG" alt="Submit" />
+      </form>
+    </div>
+
+    <div id="div2" class="w3-container w3-teal" >
+      <h1>Create an account</h1>
+      <form name="newAccountForm" method="post" onsubmit="return valida_newaccount();">
+        <li><img src="/static/name.PNG" alt="Name" height="35" width="35">Name</li>
+        <li><input type="text" placeholder="Your Name" name="firstname" id="firstname" alt="Enter first name"><input type="text" placeholder="Your Last Name" id="lastname" name="lastname" ></li>
+        <li><img src="/static/phone.PNG" alt="Enter mobile number" height="35" width="35">Mobile Number </li>
+        <li><input type="text" name="mobilenumber" placeholder="Country-areacode-mobile number "></li>
+        <li><input type="text" name="mobilenumber2" placeholder="Re-enter mobile number "></li>
+        <li><img src="/static/email.PNG" alt="Enter email address" height="35" width="35">Enter email address</li> 
+        <li><input type="text" name="emailaddress" placeholder="youraccount@fli.com"></li>
+        <li><input type="text" name="emailaddress2"placeholder="Re-enter email address"></li>
+        <li><img src="/static/pen.PNG" alt="Enter New password" height="35" width="35">Enter new password</li> 
+        <li><input type="password" name="newpassword" placeholder="Your password"></li>
+        <p>Type of account</p>
+        <li>
+          <select>
+            <option value="freelancer" selected>freelancer</option>
+            <option value="client">client</option>
+            <option value="both">both</option>
+          </select>
+        </li>
+        <li><a href="">Why do I need to provide this?</a> </li>
+        <li id="terms">By clicking Create an account, you agree to our <a href="">Terms</a> and that <br>you have read our <a href="">Data Policy</a>, including our <a href="">Cookie Use</a>.</li>
+        <li><input type="submit" name="newaccount" value="Create an account"></li>
+        <li id="otherlink"><a href="">other link a Page</other link....></li>
+      </form>
+    </div>
+  </div>
+
+  <div id="footer_wrapper">
+
+    <div id="footer1">
+    </div>
+
+    <div id="footer2">
+      <a href="">Contact Us</a><a href="">Messenger</a><a href="">About FLI</a><a href="">Mobile</a><a href="">Terms</a><a href="">Help</a>
+    </div>
+
+  </div>
+  </body>
+</html>
+

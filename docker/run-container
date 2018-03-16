@@ -1,0 +1,15 @@
+echo "run=>"
+docker ps
+docker images
+echo "enter=>"
+read
+docker run -d -p 5000:5000 rgomezm/fliimg python appfli.py
+echo "************************************************************"
+echo "Status:"
+docker ps
+docker images
+docker container ls
+echo "************************************************************"
+echo "Validation:"
+curl -i http://192.168.29.200:4000/
+echo "************************************************************"
