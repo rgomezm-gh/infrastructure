@@ -1,0 +1,14 @@
+docker images
+docker history rgomezm/webapp
+docker ps
+docker container ls
+docker container ps
+
+# Other:
+# docker run <image> -> create a new container for the image
+# docker start|stop <name|id> -> Start an existing container
+# docker stop ps [-a] -> list all containers
+# docker rm <name|id> -> remove
+# docker exec -it ocntainerxxx ps aux 
+
+

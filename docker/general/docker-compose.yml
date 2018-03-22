@@ -1,0 +1,10 @@
+version: '1'
+services:
+  web:
+    build: .
+    ports:
+     - "4000:5000"
+
+  webapp:
+    image: "rgomezm/myimage"
+

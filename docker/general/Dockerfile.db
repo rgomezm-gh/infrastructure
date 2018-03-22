@@ -1,0 +1,7 @@
+FROM rgomezm/flidb1
+MAINTAINER rgomezm@docker.com
+#RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q python-all python-pip 
+RUN apt-get -y update 
+WORKDIR /opt/db
+RUN mkdir -p /opt/db
+CMD ["/bin/shell"]

@@ -1,0 +1,8 @@
+echo "build=>"
+read
+docker build . -t rgomezm/flidb1:latest
+echo "************************************************************"
+echo "Status:"
+docker ps
+docker images
+echo "************************************************************"

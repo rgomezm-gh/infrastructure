@@ -1,0 +1,26 @@
+# Define image
+FROM rgomezm/flidb1
+MAINTAINER rgomezm@docker.com
+
+# Settings for the imaeg
+WORKDIR /opt/dirx
+RUN mkdir -p /opt/dirx
+ADD ./text.txt /dir/xxxx
+ADD ./codapp /opt/dirx/
+
+# Install packages 
+RUN apt-get -y update 
+RUN pip install -qr /dir/text.txt
+
+## Define environment variable
+ENV NAME salsa
+
+# Make port available to the world outside this container
+EXPOSE 4000
+
+# set hc to Run web_app.py when the container launches
+HEALTHCHECK --interval=5s \
+            --timeout=5s \
+            CMD ["python", "web_app.py"] || exit 1
+# CMD ["/bin/bash"]
+# CMD ["python", "app.py"]
