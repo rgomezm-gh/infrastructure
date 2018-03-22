@@ -6,17 +6,12 @@ MAINTAINER rgomezm@docker.com
 # Settings for the imaeg
 WORKDIR /opt/db
 RUN mkdir -p /opt/db
-ADD ./text.txt /dir/db
-RUN pip install -qr /opt/db/text.txt
-
-# Code
-RUN mkdir /opt/db/code
-ADD ./codapp /opt/db/
 
 # Storage
 USER salsa
-RUN mkdir /opt/db/data
+RUN mkdir /opt/db/data /opt/db/code
 VOLUME /opt/db/data
+ADD ./codedb /opt/db/data/code
 
 # Install mysql 
 ENV MYSQL_USER=mysql \
